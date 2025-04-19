@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+input {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    padding: 7px;
+    background: #fff;
+    font-size: small;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px lightgray;
+    border-color: darkgray;
+}
