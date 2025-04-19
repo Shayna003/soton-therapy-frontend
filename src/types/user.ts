@@ -8,3 +8,4 @@ export interface UserInfo {
     theme: number;
     configuredProfile: boolean;
 }
+
