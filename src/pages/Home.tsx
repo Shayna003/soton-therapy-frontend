@@ -4,6 +4,7 @@ import { Link } from "react-router"
 export const Home = () => {
     return (
         <>
+        <NavBar />
         <div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
             <div className="w-full h-full justify-center place-items-center flex flex-col gap-5">
                 <h1 className="font-semibold text-gray-900 text-3xl">AI Chatbot for <span className="">Mental Health Therapy</span></h1>

@@ -10,9 +10,16 @@ export type ChatMessage = {
     receiver: string;
     senderModel: modelType;
     receiverModel: modelType;
-    message: string;
+    message?: string;
+    content?: string;
     isAI: boolean;
     messageType: messageType;
     timeStamp: Date;
 }
 
+export type AIModel = {
+    id?: string,
+    _id?: string,
+    name: string,
+    description: string
+}

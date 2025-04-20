@@ -7,6 +7,7 @@ import { Honeybadger, HoneybadgerErrorBoundary } from "@honeybadger-io/react"
 import { store } from "@/state/store"
 import { Provider } from 'react-redux'
 import App from '@/App'
+import { SocketProvider } from '@/io/socket'
 
 const config = {
   apiKey: HONEY_BADGER_API_KEY,
@@ -19,7 +20,9 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HoneybadgerErrorBoundary honeybadger={honeybadger}>
       <Provider store={store}>
-        <App />
+        <SocketProvider>
+          <App />
+        </SocketProvider>
       </Provider>
     </HoneybadgerErrorBoundary>
   </StrictMode>,

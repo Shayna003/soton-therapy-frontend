@@ -19,8 +19,8 @@ export const NavBar = () => {
     }
 
     return (
-        <div className="w-full flex gap-2 justify-center place-items-center">
-            <div className="w-full self-start flex gap-5 justify-start place-items-start pl-7 pt-3">
+        <div className="w-full flex gap-2 justify-center place-items-center bg-none z-50">
+            <div className="w-full self-start flex gap-5 justify-start place-items-start pl-7 pt-3 bg-none">
                 <Link className="text-blue-500 hover:text-blue-400 active:text-blue-300" to="/">Home</Link>
             </div>
             {

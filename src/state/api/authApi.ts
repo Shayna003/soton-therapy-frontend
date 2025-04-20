@@ -1,12 +1,9 @@
 import { BACKEND_URL, FECTH_USER_INFO_URL, LOGIN_URL, LOGOUT_URL, SIGNUP_URL } from "@/constants";
-import { UserInfo } from "@/types";
-import { SignInPayload, SignUpPayload } from "@/types/payloads";
-import { SignUpResponse } from "@/types/response";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const authApi = createApi({
-    //reducerPath: "main",
     baseQuery: fetchBaseQuery({ baseUrl: BACKEND_URL, credentials: "include", }),
+    reducerPath: "main",
     endpoints: (builder) => ({
         postLogIn: builder.mutation({
             query: (payload) => ({
